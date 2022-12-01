@@ -47,5 +47,49 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
+            <div class="game">
+                <section id="game1">
+                    <div>
+                        <h2>Guessing Game Example 1</h2>
+                        <form>
+                            <label for="numGuess">Enter a Number Between 1 and 10:</label>
+                            <span class="message">Please enter a number from 1 to 10</span>
+                            <input type="number" name="numGuess" id="numGuess">
+                            <input type="submit" name="guessGame" id="guessGame" value="Play the Game!">
+                        </form>
+                        <section id="gameDisplay">
+                            <h3>Guess a Number!</h3>
+                            <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+                            <p id="gameOutput">This is where the random number and user guess would display, along with a message about whether they won or not.</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <div class="switcher">
+                <section id="switcher1">
+                    <h2>Product Switcher Example 1</h2>
+                    <section id="product1" class="currentItem">
+                        <h3>Heading Describing Item 1</h3>
+                        <img src="http://via.placeholder.com/600x400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                        <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <section id="product2" class="hiddenItem">
+                        <h3>Heading Describing Item 2</h3>
+                        <img src="http://via.placeholder.com/600x400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                        <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <section id="product3" class="hiddenItem">
+                        <h3>Heading Describing Item 3</h3>
+                        <img src="http://via.placeholder.com/600x400" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                        <p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <section id="switcherButtons">
+                        <h2 class="sr-only">Click on a Button to View a Product</h2>
+                        <button id="btn1">View Item 1</button>
+                        <button id="btn2">View Item 2</button>
+                        <button id="btn3">View Item 3</button>
+                    </section>
+                </section>
+            </div>
         </main>
     </body>
