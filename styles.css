@@ -1,3 +1,11 @@
+/*Body Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Passion+One&display=swap');
+
+:root {
+    --bigFont: 'Passion One', san-serif;
+    --midFont: 'Josefin Sans', san-serif;
+}
+
 body {
     width: 1280px;    
     margin: 0 auto;
@@ -6,12 +14,44 @@ body {
     color: black;
 }
 
+h1 {
+    font-family: var(--bigFont);
+    font-size: 4em;
+}
+
+h2{
+    font-family: var(--midFont);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--midFont);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+p, label, legend, nav, button {
+    font-family: var(--midFont);
+    font-size: 1em;
+    font-weight: 400;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
   }
 
 
+
+/*Navigation Styles*/
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+    display: inline;
+}
+
+/*Form Styles*/
 form{
 	width: 100%;
 	max-width: 1200px;
@@ -40,7 +80,7 @@ form fieldset {
 
 
 
-
+/*Game Styles*/
 #game1{
 	margin-top: 2rem;	
 	padding-bottom: 2rem;
@@ -68,7 +108,7 @@ form fieldset {
 
 
 
-
+/*Switcher Styles*/
 #switcher1, #switcher2, #switcher3, #game1 {
 	background-color: white;
 	padding: 1rem;
