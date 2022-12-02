@@ -1,7 +1,16 @@
 body {
     width: 1280px;    
     margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    color: black;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 
 form{
 	width: 100%;
