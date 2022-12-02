@@ -9,6 +9,7 @@
         <title>Store</title>
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js"></script>
+        <script src="product.js"></script>
     </head>
     <body>
         <header>
@@ -32,28 +33,39 @@
             <div class="contact-form">
                 <h2>Contact Form</h2>
                 <form>
-                    <label for="fname">Full Name<span aria-hidden="true" class="required">*</span></label>
-                    <input type="text" id="fname" required>
-                    <label for="email">Email<span aria-hidden="true" class="required">*</span></label>
-                    <input type="email" id="email" required>
-                    <label for="tel">Phone<span aria-hidden="true" class="required">*</span></label>
-                    <input type="tel" id="tel" name="contact" required>
-                    <fieldset>
-                        <legend>Preferred Contact Method<span class="required">*</span></legend>
-                        <input type="radio" id=pmEmail aria-required>
-                        <label for="pmEmail">Email</label>
-                        <input type="radio" id="pmPhone" aria-required>
-                        <label for="pmPhone">Phone</label>
-                    </fieldset>
+                    <div>
+                       <label for="fullName">Full Name</label>
+                       <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div>
+                       <label for="email">Email</label>
+                       <input type="email" id="email" name="email" >
+                    </div>
+                    <div>
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" name="contact" required>
+                    </div>
+                    <div>
+                       <label for="password">Password</label>
+                       <input type="password" id="password" name="password" >
+                    </div>
+                    <div>
+                       <label for="passwordConfirm">Confirm Password</label>
+                       <input type="password" id="passwordConfirm" name="passwordConfirm" >
+                    </div>
                     <label for="comments">Comments</label>
                     <textarea id="comments" name="contact" rows="5" cols="33" required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+                    <div id="formErrors"></div>
+                    <div>
+                       <input type="submit" id="submit" value="Register">
+                    </div>
+                 </form>
             </div>
+            
             <div class="game">
                 <section id="game1">
                     <div>
-                        <h2>Guessing Game Example 1</h2>
+                        <h2>Guessing Game</h2>
                         <form>
                             <label for="numGuess">Enter a Number Between 1 and 10:</label>
                             <span class="message">Please enter a number from 1 to 10</span>
@@ -63,11 +75,45 @@
                         <section id="gameDisplay">
                             <h3>Guess a Number!</h3>
                             <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
-                            <p id="gameOutput">This is where the random number and user guess would display, along with a message about whether they won or not.</p>
+                            <p id="gameOutput"></p>
                         </section>
                     </div>
                 </section>
             </div>
+
+
+            <h2>Product Switcher</h2>
+            <p>Click on the buttons inside the product menu:</p>
+
+            <div class="prodmenu">
+                <button class="prodlinks" id="prod1link">Product 1</button>
+                <button class="prodlinks" id="prod2link">Product 2</button>
+                <button class="prodlinks" id="prod3link">Product 3</button>
+            </div>
+
+            <div id="product1" class="prodcontent">
+                <h3>White Tee</h3>
+                <p>White cotton T-Shirt </p>
+                <img src="assets/white.jpg" alt="White shirt" width="300" height="200">
+            </div>
+
+            <div id="product2" class="prodcontent">
+                <h3>Teal Tee</h3>
+                <p>Teal cotton T-Shirt</p> 
+                <img src="assets/teal.jpg" alt="Teal shirt" width="300" height="200">
+            </div>
+
+            <div id="product3" class="prodcontent">
+                <h3>Black Tee</h3>
+                <p>Black cotton T-Shirt</p> 
+                <img src="assets/black.jpg" alt="Black shirt" width="300" height="200">
+            </div>
+           
+           
+           
+           
+           
+            <!--
             <div class="switcher">
                 <section id="switcher1">
                     <h2>Product Switcher Example 1</h2>
@@ -93,6 +139,6 @@
                         <button id="btn3">View Item 3</button>
                     </section>
                 </section>
-            </div>
+            </div>-->
         </main>
     </body>
